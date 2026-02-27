@@ -1,0 +1,131 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app-shell {
+  width: min(1120px, 94vw);
+  margin: 2rem auto 3rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.05);
+}
+
+.hero h1 {
+  margin: 0.4rem 0;
+}
+
+.badge {
+  margin: 0;
+  font-weight: 600;
+  color: #b91c1c;
+}
+
+.stats-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.stat-card h3 {
+  margin: 0.4rem 0 0;
+  font-size: 1.7rem;
+}
+
+.muted,
+.hint {
+  margin: 0;
+  color: #64748b;
+}
+
+.grid-two-columns {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-weight: 500;
+}
+
+input,
+button {
+  font: inherit;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  padding: 0.6rem 0.7rem;
+}
+
+button {
+  border: none;
+  background: #b91c1c;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checklist {
+  margin: 0.2rem 0 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0.65rem 0.45rem;
+  white-space: nowrap;
+}
+
+.status {
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.status.ok {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.warn {
+  background: #fef3c7;
+  color: #92400e;
+}
